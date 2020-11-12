@@ -3,6 +3,7 @@ package com.wvcneto.hr.worker.resources;
 import com.wvcneto.hr.worker.entities.Worker;
 import com.wvcneto.hr.worker.services.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -13,6 +14,9 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/workers")
 public class WorkerResource {
+
+    @Autowired
+    private Environment env;
 
     @Autowired
     WorkerService workerService;

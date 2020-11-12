@@ -1,7 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="HR-MultiServices" type="CompoundRunConfigurationType">
+    <toRun name="MS-HR-Workers (8001)" type="Application" />
+    <toRun name="MS-HR-Workers (8002)" type="Application" />
     <toRun name="MS-HR-Payroll" type="Application" />
-    <toRun name="MS-HR-Workers" type="Application" />
     <method v="2" />
   </configuration>
 </component>
